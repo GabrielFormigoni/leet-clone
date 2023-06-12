@@ -9,6 +9,7 @@ import { DBProblem, Problem } from "@/utils/types/problem";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { toast } from "react-toastify";
 import { ClipLoader } from "react-spinners";
+import Image from "next/image";
 
 type ProblemDescriptionProps = {
   problem: Problem;
@@ -262,7 +263,7 @@ const ProblemDescription: React.FC<ProblemDescriptionProps> = ({ problem, _solve
                   Example {index + 1}:
                 </p>
                 {example.img && (
-                  <img className="mt-2" src={example.img} alt="image" />
+                  <Image className="mt-2" src={example.img} alt="image" width={100} height={100} />
                 )}
                 <div className="example-card">
                   <pre>

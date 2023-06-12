@@ -88,14 +88,14 @@ const Topbar: React.FC<TopbarProps> = ({ problemPage }) => {
 
         <div className="flex flex-1 space-x-4 items-center justify-end">
           <div>
-            <a
+            <Link
               href="/"
-              target="blank"
+              target="_blank"
               rel="moreferrer"
               className="bg-dark-fill-3 py-1.5 px-3 cursor-pointer rounded text-brand-orange hover:bg-dark-fill-2"
             >
               Premium
-            </a>
+            </Link>
           </div>
           {!user && (
             <Link href="/auth" onClick={() => {

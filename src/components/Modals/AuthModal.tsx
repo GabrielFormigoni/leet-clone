@@ -52,7 +52,7 @@ function useCloseModal() {
     return () => {
       window.removeEventListener('keydown', handleEsc)
     }
-  }, [])
+  }, [closeModal])
   
   return closeModal
 }

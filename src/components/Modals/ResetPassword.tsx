@@ -23,7 +23,7 @@ const ResetPassword: React.FC<ResetPasswordProps> = () => {
     if(error) {
       toast.error(error.message)
     }
-  }, [])
+  }, [error])
 
   return (
     <form className="space-y-6 px-6 pb-4" onSubmit={resetPassword}>
